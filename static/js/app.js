@@ -72,9 +72,11 @@ function buildMetadata(sample){
             PANEL.append("h6").text(`${key.toUpperCase()}: ${result[key]}`)
         }
 
+        buildGauge(result.wfreq);
 
     })
 }
+
 function init(){
     let selector = d3.select("#selDataset");
 
